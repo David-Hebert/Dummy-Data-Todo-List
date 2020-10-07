@@ -25,8 +25,10 @@ let arrayOfTodos = [
 
   const populateTodos = () => {
     let toDo = document.getElementById ("todo-list")
-    let newListElement = document.createElement ("li")
-    newListElement.innerHTML = arrayOfTodos [0].title
-    toDo.appendChild (newListElement)
-
+ 
+    for (i = 0; i < arrayOfTodos.length; i++) {
+        let newListElement = document.createElement ("li")
+        newListElement.innerHTML = arrayOfTodos [i].title
+        toDo.appendChild (newListElement);
+    }
   };
