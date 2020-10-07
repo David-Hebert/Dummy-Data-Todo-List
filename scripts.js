@@ -30,5 +30,8 @@ let arrayOfTodos = [
         let newListElement = document.createElement ("li")
         newListElement.innerHTML = arrayOfTodos [i].title
         toDo.appendChild (newListElement);
+        if (arrayOfTodos[i].completed == false) {
+            newListElement.style.color = "red"
+        }        
     }
   };
