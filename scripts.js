@@ -31,7 +31,7 @@ let arrayOfTodos = [
         newListElement.innerHTML = arrayOfTodos [i].title
         toDo.appendChild (newListElement);
         if (arrayOfTodos[i].completed == false) {
-            newListElement.style.color = "red"
+            newListElement.classList.add("incomplete");
         }        
     }
   };
